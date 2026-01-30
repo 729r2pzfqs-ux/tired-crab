@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$TIRED - We're All Tired 🦀😴</title>
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span>🦀😴 $TIRED</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#how-to-buy">How to Buy</a>
+            <a href="https://x.com/tiredcrabsol" target="_blank">X</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="logo.jpg" alt="Tired Crab" class="hero-mascot">
+            <h1>$TIRED</h1>
+            <p class="tagline">We're all tired. Might as well be rich. 🦀😴</p>
+            <p class="subtitle">Solana's most exhausted crab</p>
+            <div class="hero-buttons">
+                <a href="#how-to-buy" class="btn btn-primary">Buy $TIRED</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Why $TIRED?</h2>
+        <p class="about-intro">Because we're ALL tired. Work, life, crypto... it's exhausting. 😴<br>This crab gets it. Coffee in claw, barely awake, still showing up.</p>
+        <p class="about-sub">No energy for rugs. Too tired to dump. Just vibes and naps.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <span class="feature-icon">😴</span>
+                <h3>100% Exhausted</h3>
+                <p>We're running on coffee and hopium.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">☕</span>
+                <h3>Fueled by Caffeine</h3>
+                <p>One cup away from giving up. But we don't.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔥</span>
+                <h3>LP Burned</h3>
+                <p>Too tired to rug. Liquidity locked forever.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🦀</span>
+                <h3>Community First</h3>
+                <p>Fair launch. No presale. Just tired crabs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="tokenomics">
+        <h2>Tokenomics</h2>
+        <div class="tokenomics-grid">
+            <div class="token-card">
+                <span class="token-value">1B</span>
+                <span class="token-label">Total Supply</span>
+            </div>
+            <div class="token-card">
+                <span class="token-value">0%</span>
+                <span class="token-label">Buy Tax</span>
+            </div>
+            <div class="token-card">
+                <span class="token-value">0%</span>
+                <span class="token-label">Sell Tax</span>
+            </div>
+            <div class="token-card">
+                <span class="token-value">🔥</span>
+                <span class="token-label">LP Burned</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="how-to-buy" class="how-to-buy">
+        <h2>How to Buy</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Get a Wallet</h3>
+                <p>Download Phantom or Solflare wallet</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Get SOL</h3>
+                <p>Buy SOL on an exchange and send to your wallet</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Go to Jupiter</h3>
+                <p>Visit jup.ag and connect your wallet</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Swap for $TIRED</h3>
+                <p>Paste contract address and swap your SOL</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract Section -->
+    <section class="contract">
+        <h2>Contract Address</h2>
+        <div class="contract-box" id="contract-address">
+            <span>COMING SOON</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://x.com/tiredcrabsol" target="_blank" class="social-btn">𝕏</a>
+        </div>
+        <p class="disclaimer">$TIRED is a meme coin with no intrinsic value. We're too tired to promise anything. NFA. 🦀😴</p>
+    </footer>
+
+    <script>
+        document.getElementById('contract-address').addEventListener('click', function() {
+            const address = this.innerText;
+            if (address !== 'COMING SOON') {
+                navigator.clipboard.writeText(address);
+                this.classList.add('copied');
+                setTimeout(() => this.classList.remove('copied'), 2000);
+            }
+        });
+    </script>
+</body>
+</html>
