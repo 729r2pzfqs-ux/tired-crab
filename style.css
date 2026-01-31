@@ -146,6 +146,21 @@ body::after {
     width: 100%;
 }
 
+.nav-links a.nav-buy {
+    background: linear-gradient(135deg, #ff6b35, #ff9248);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    color: #fff !important;
+}
+
+.nav-links a.nav-buy:hover {
+    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+}
+
+.nav-links a.nav-buy::after {
+    display: none;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -607,6 +622,20 @@ body::after {
 .contract-box.copied {
     background: rgba(78, 205, 196, 0.2);
     border-color: #4ecdc4;
+}
+
+.contract-hint {
+    color: #444;
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-pump {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
 }
 
 /* Footer */
